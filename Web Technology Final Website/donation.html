@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular One" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kodchasan" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sail" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Port Lligat Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <title>Donate To Us</title>
+    <style>
+    body{
+      margin: 0px;
+    }
+/*THIS IS FOR THE MENU BAR*/
+      #navbar {
+        overflow: hidden;
+        background-color: #BB8760;
+        padding: 3px 10px 0px;
+        transition: 0.4s;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 99;
+        justify-content: center;
+      }
+      #arrow{
+        background: #BB8760;
+        border: none;
+      }
+      #navbar a {
+        float: left;
+        color: #fff1f1;
+        font-family: "Rubik";
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 30px;
+        border-radius: 4px;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+
+      #logo {
+        width: 100px;
+        height: auto;
+        transition: 0.4s;
+        border-radius: 10px;
+      }
+
+      #navbar a:hover {
+        background-color: #FFDADA;
+        color: black;
+      }
+
+      #navbar a.active {
+        background-color: #4F0E0E;
+        color: white;
+      }
+
+      #navbar-right {
+        float: right;
+        padding-right: 60px;
+        padding: 20px;
+      }
+      .ar{
+        display: none;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      @media screen and (max-width: 1000px) {
+        #navbar {
+          padding-top: 30px 10px !important;
+        }
+        #navbar a{
+          float: none;
+          display: block;
+          text-align: center;
+        }
+        #file a{
+          display: inline;
+        }
+        #navbar-right {
+          float: none;
+          padding-right: 0px;
+        }
+        .ar{
+          display: inline-block;
+        }
+        .ardwn{
+          display: none;
+        }
+      }
+      .material-symbols-outlined{
+        z-index: 1;
+        color: white;
+        background-color: #4F0E0E;
+        border-radius: 20px;
+      }
+/*THIS IS FOR THE MENU BAR*/
+
+/*THIS IS FOR THE TILE SECTION*/
+      #ttl{
+        margin-top: 10vh;
+        background-image: url("donationimage.jpg");
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+        background-size: cover;
+        float: right;
+        padding-bottom: 30px;
+        padding-top: 30vh;
+        width: 100vw;
+        overflow: hidden;
+        align-items: center;
+        align-content: center;
+      }
+      #header_section{
+        color: white;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 30px;
+        font-family: "Secular One";
+        display:inline-block;
+        border-radius: 4px;
+        width: 50vw;
+        text-align: center;
+      }
+/*THIS IS FOR THE TILE SECTION*/
+
+/*THIS IS FOR THE SUBHEAD SECTION*/
+      #subhead{
+        background: #4f0e0e;
+      }
+      #header_section2 P{
+        font-family: "Kodchasan";
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 25px;
+        padding: 20px;
+        line-height: 10vh;
+      }
+/*THIS IS FOR THE SUBHEAD SECTION*/
+
+/*THIS IS FOR THE FORM SECTION*/
+      #form h2 {
+        font-family: "Kodchasan";
+        text-align: center;
+        color: #4f0e0e;
+        font-size: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        line-height: 10vh;
+      }
+      #donation{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-family: "Rubik";
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        line-height: 40px;
+      }
+      #name, #amount{
+        width: 50vw;
+        height: 5vh;
+        font-family: "Rubik";
+        border-radius: 5px;
+        font-size: 20px;
+      }
+      .btn{
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        border-color: #4f0e0e;
+        color: #4f0e0e;
+        font-family: "Rubik";
+        width: 10vw;
+        min-width: 100px;
+        font-size: 1em;
+      }
+      .btn:hover {
+        background-color: #BB8760;
+        color: #ffffff;
+      }
+      .bt{
+        border-radius: 10px;
+        text-align: center;
+        width: 200px;
+        height: 90px;
+        background-color: #4f0e0e;
+        color: white;
+        border-color: white;
+        font-size: 20px;
+        border-width: 4px;
+      }
+      .bt:hover{
+        background: #D7A86E;
+      }
+/*THIS IS FOR THE FORM SECTION*/
+
+/*THIS IS FOR THE CERTIFICATION SECTION*/
+    #certification{
+      text-align: center;
+      overflow-y: scroll;
+    }
+    .border{
+      border-style: outset;
+      border-width: 30px;
+      border-color: #9a7b4f;
+      width: 1000px;
+      height: 700px;
+      padding: 20px;
+      background: url('Certificate.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .content h3{
+      font-family: "Kodchasan";
+    }
+    .content h1{
+      font-family: "Sail";
+      font-size: 50px;
+      color: #4f0e0e;
+    }
+    .content h4{
+      font-family: "Port Lligat Sans";
+      font-size: 20px;
+      color: #9a7b4f;
+    }
+    .content #sym{
+      width: 100px;
+      height: auto;
+    }
+    .content #n1, #n2{
+      font-family: "Sacramento";
+      font-size: 40px;
+      color: black;
+      text-decoration: underline;
+    }
+    .showme{
+      display: none;
+    }
+/*THIS IS FOR THE CERTIFICATION SECTION*/
+
+/*THIS IS FOR THE FOOT SECTION*/
+      #foot{
+        background-color: #BB8760;
+        padding: 20px;
+        font-family: "Rubik";
+        color: white;
+        width: inherit;
+        padding: 20px;
+        text-align: right;
+      }
+/*THIS IS FOR THE FOOT SECTION*/
+    </style>
+  </head>
+  <body>
+    <header id="navbar" class = "navbarc1">
+      <img src="RuFree.jpg" alt="" id = "logo">
+      <div id="navbar-right">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a class = "active" href="donation.html" id = "special">Donate</a>
+      </div>
+      <center>
+        <div class="ar">
+          <button type = "button" onclick = "hide()" id = "arrow"><span class="material-symbols-outlined">arrow_downward</span></button>
+        </div>
+      </center>
+    </header>
+
+  <section id = "ttl">
+    <center><header id = "header_section">
+      <h1>Donate  To  Us</h1>
+    </header></center>
+  </section>
+
+  <section id = "subhead">
+    <header id = "header_section2">
+      <p>A small donation can go a long way to help those who are less fortunate by giving them opportunities they deserve.<br>By donating to this foundation, you will also be presented with a certificate acknowledging your generosity.</p>
+    </header>
+  </section>
+
+  <section id = "form">
+    <h2>Please Fill Out The Below Information</h2>
+    <form id="donation">
+      <label for="name">Please Enter Your Name:<br><input type="text" placeholder="Full Name" id = "name" class = "name" required/></label><br><br>
+      <label for="amount">Please Enter The Amount To Be Donated:<br>₹ <input type="text" placeholder="Amount" id = "amount" class = "amount" required/>/-<br>or</label><br>
+      <input type="button" value = "₹ 5" class = "btn" onclick = "donation.amount.value += '5'" />
+      <input type="button" value = "₹ 10" class = "btn" onclick = "donation.amount.value += '10'" />
+      <input type="button" value = "₹ 15" class = "btn" onclick = "donation.amount.value += '15'" />
+      <input type="button" value = "₹ 25" class = "btn" onclick = "donation.amount.value += '25'" />
+      <input type="button" value = "₹ 100" class = "btn" onclick = "donation.amount.value += '100'" /><br><br>
+      <input type="button" name = "button" onclick = 'donate()' class = "bt" value = "Donate" />
+    </form>
+    <center><button type="button" name="button" onclick = 'reveal()' class = 'bt'>Get Certificate</button></center>
+  </section><br><br>
+
+  <section id = "certification" class = "showme">
+    <div class="container"><center>
+      <div class="border">
+        <div class="content">
+          <center>
+            <img src="RuFree.jpg" alt="symbol" id = "sym">
+            <h3>RuFree Foundation</h3>
+            <h1>Certificate of Appreciation</h1>
+            <h4>We hereby express our sincerest gratitude and appreciation to</h4>
+            <h1 id = "n1"></h1>
+            <h4>For donating</h4>
+            <h1 id = "n2"></h1>
+            <h4>To aid in our cause to curb poverty in India and help make a positive impact in the world.</h4>
+          </center>
+        </div>
+      </div>
+    </center></div>
+  </section><br><br>
+  <footer  id = "foot">
+      <p>Copyright (c) 2022 RuFree Foundation All Rights Reserved.</p>
+  </footer>
+
+  <script type="text/javascript">
+  function reveal() {
+     var element = document.getElementById("certification");
+     element.classList.toggle("showme");
+  }
+  function donate() {
+    let x = document.getElementById("name").value;
+    let y = document.getElementById("amount").value;
+    document.getElementById('n1').innerHTML = x;
+    document.getElementById('n2').innerHTML = "₹ " + y + " /-";
+  }
+  function hide() {
+     var up = document.getElementById("navbar-right");
+     up.classList.toggle("ardwn");
+  }
+  </script>
+
+  </body>
+</html>

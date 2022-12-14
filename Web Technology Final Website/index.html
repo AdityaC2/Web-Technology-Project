@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular One" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kodchasan" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <title>Welcome</title>
+    <style>
+    body{
+      margin: 0px;
+    }
+/*THIS IS FOR THE MENU BAR*/
+      #navbar {
+        overflow: hidden;
+        background-color: #BB8760;
+        padding: 50px 10px;
+        transition: 0.4s;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 99;
+        justify-content: center;
+      }
+      .navbarc1 {
+        background-image: linear-gradient(90deg, #FFFAF9 25%, #C19A6B 55%, #6E260E 100%);
+      }
+      #navbar a {
+        float: left;
+        color: #fff1f1;
+        font-family: "Rubik";
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 30px;
+        border-radius: 4px;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+
+      #logo {
+        width: 10vw;
+        height: auto;
+        transition: 0.4s;
+        border-radius: 10px;
+      }
+
+      #navbar a:hover {
+        background-color: #FFDADA;
+        color: black;
+      }
+
+      #navbar a.active {
+        background-color: #4F0E0E;
+        color: white;
+      }
+
+      #navbar-right {
+        float: right;
+        padding-right: 60px;
+        padding: 20px;
+      }
+      .ar{
+        display: none;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      #arrow{
+        background: none;
+        border: none;
+      }
+      @media screen and (max-width: 1000px) {
+        #navbar {
+          padding-top: 30px 10px !important;
+        }
+        #navbar a{
+          float: none;
+          display: block;
+          text-align: center;
+        }
+        #file a{
+          display: inline;
+        }
+        #navbar-right {
+          float: none;
+          padding-right: 0px;
+        }
+        .ar{
+          display: inline-block;
+        }
+        .ardwn{
+          display: none;
+        }
+      }
+      .material-symbols-outlined{
+        z-index: 1;
+        color: white;
+        background-color: #4F0E0E;
+        border-radius: 20px;
+      }
+/*THIS IS FOR THE MENU BAR*/
+
+/*THIS IS FOR THE TILE SECTION*/
+      #ttl{
+        margin-top: 20vh;
+        background-image: url("ttl_img.jpeg");
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+        background-size: cover;
+        float: right;
+        padding-bottom: 30px;
+        padding-top: 30vh;
+        width: 100vw;
+        overflow: hidden;
+        align-items: center;
+      }
+      #header_section{
+        color: white;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 30px;
+        font-family: "Secular One";
+        display:inline-block;
+        border-radius: 4px;
+        width: 50vw;
+        text-align: center;
+      }
+/*THIS IS FOR THE TILE SECTION*/
+
+/*THIS IS FOR THE PREVENTION SECTION*/
+      #dangers{
+        padding: 20px;
+        background: #ffffff;
+      }
+      #header_section2 h2{
+        font-family: "Kodchasan";
+        text-align: center;
+        color: #4f0e0e;
+        font-size: 25px;
+        padding: 20px;
+        line-height: 10vh;
+      }
+      #header_section2 p{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-family: "Rubik";
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        line-height: 40px;
+      }
+      #button{
+        border-radius: 10px;
+        text-align: center;
+        width: 200px;
+        height:90px;
+        background-color: #4f0e0e;
+        color: white;
+        border-color: white;
+        font-size: 20px;
+        border-width: 4px;
+      }
+      #button:hover{
+        background: #D7A86E
+      }
+/*THIS IS FOR THE PREVENTION SECTION*/
+
+/*THIS IS FOR THE VIDEO SECTION*/
+      #video{
+        background-image: url(crisisbutton.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+        #vid{
+          overflow-y: scroll;
+      }
+      #header_section3 h2{
+        font-family: "Kodchasan";
+        text-align: center;
+        color: #ffffff;
+        font-size: 25px;
+        background-color: #4f0e0e;
+        width: inherit;
+        padding: 20px;
+        line-height: 10vh;
+      }
+/*THIS IS FOR THE VIDEO SECTION*/
+
+/*THIS IS FOR THE HANDLES SECTION*/
+      #handles{
+        padding-bottom: 5vh;
+      }
+      #header_section4 h2{
+        font-family: "Kodchasan";
+        text-align: center;
+        color: #4f0e0e;
+        font-size: 25px;
+        padding: 20px;
+        line-height: 5vh;
+      }
+      .handles{
+        width: 50px;
+        height: auto;
+        transition: 0.5s;
+      }
+      .handles:hover{
+        width: 60px;
+        height: auto;
+      }
+      .special{
+        width: 60px;
+        height: auto;
+        transition: 0.5s;
+      }
+      .special:hover{
+        width: 70px;
+        height: auto;
+      }
+      .data{
+        width: 20vw;
+        text-align: center;
+        font-family: "Rubik";
+      }
+/*THIS IS FOR THE HANDLES SECTION*/
+
+/*THIS IS FOR THE FOOT SECTION*/
+      #foot{
+        background-color: #BB8760;
+        padding: 20px;
+        font-family: "Rubik";
+        color: white;
+        width: inherit;
+        padding: 20px;
+        text-align: right;
+        margin: 0px;
+      }
+/*THIS IS FOR THE FOOT SECTION*/
+    </style>
+  </head>
+  <body>
+    <header id="navbar" class = "navbarc1">
+      <img src="RuFree.jpg" alt="" id = "logo">
+      <div id="navbar-right">
+        <a class = "active" href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="donation.html" id = "special">Donate</a>
+      </div>
+      <center>
+        <div class="ar">
+          <button type = "button" onclick = "hide()" id = "arrow"><span class="material-symbols-outlined">arrow_downward</span></button>
+        </div>
+      </center>
+    </header>
+
+  <section id = "ttl">
+    <center><header id = "header_section">
+      <h1>A <em><span style = "color:yellow">Small</span></em> act of Generosity<br><span style="font-size:30px"> creates </span><br> <em><span style = "color:yellow">Substantial</span></em> Opportunities</h1>
+    </header></center>
+  </section>
+
+  <section id = "dangers">
+    <header id = "header_section2">
+      <h2>The Crisis</h2>
+      <p>Poverty is an extremely serious case in India. It hinders many bright minds from getting the facilities and opportunities they need to realize their true potential. <b><span style = "color: #594545">Click below to know more about poverty in India</span></b>.</p>
+    </header>
+    <center><form action = "povertycauses.html" method = "post"><button type="submit" name="button" id = "button">Know More</button></form></center>
+  </section>
+
+  <section id = "video">
+    <header id = "header_section3">
+      <h2>What you need to know about India's Poverty</h2>
+    </header>
+    <div id = "vid">
+      <center><iframe width="1120" height="630" src="https://www.youtube-nocookie.com/embed/0K218WpJb2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+    </div>
+  </section>
+
+  <section id = "handles">
+    <header id = "header_section4">
+      <h2>Follow Us</h2>
+    </header><br>
+    <center>
+      <table>
+        <tr>
+          <td class = "data"><a href = "https://www.reddit.com/login/"><img class = "handles" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-reddit-circle-512.png" alt="Reddit"></a></td>
+          <td class = "data"><a href = "https://www.linkedin.com/login"><img class = "handles" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin"></a></td>
+          <td class = "data"><a href = "https://www.instagram.com/accounts/login/"><img class = "handles" src="https://icon-library.com/images/new-instagram-icon-png/new-instagram-icon-png-11.jpg" alt="Instagram"></a></td>
+          <td class = "data"><a href = "https://www.facebook.com/"><img class = "special" src="https://png.pngtree.com/png-clipart/20180515/ourmid/pngtree-facebook-logo-facebook-icon-png-image_3566127.png" alt="Facebook"></a></td>
+          <td class = "data"><a href = "https://twitter.com/i/flow/login"><img class = "handles" src="https://png.pngtree.com/png-clipart/20221019/original/pngtree-twitter-social-media-round-icon-png-image_8704823.png" alt="Twitter"></a></td>
+        </tr>
+        <tr>
+          <td class = "data"><label>Reddit</label></td>
+          <td class = "data"><label>Linkedin</label></td>
+          <td class = "data"><label>Instagram</label></td>
+          <td class = "data"><label>Facebook</label></td>
+          <td class = "data"><label>Twitter</label></td>
+        </tr>
+      </table>
+  </center>
+  </section>
+  <footer  id = "foot">
+      <p>Copyright (c) 2022 RuFree Foundation All Rights Reserved.</p>
+  </footer>
+  <script type="text/javascript">
+    window.onscroll = function() {menuminimization()};
+
+function menuminimization() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.padding = "3px 10px 0px";
+    document.getElementById("logo").style.width = "100px";
+    document.getElementById('navbar').style.justify = "safe center";
+    var x = document.getElementById("navbar");
+    x.classList.remove("navbarc1");
+  }
+  else {
+    document.getElementById("navbar").style.padding = "50px 10px";
+    document.getElementById("logo").style.width = "10vw";
+    var x = document.getElementById("navbar");
+    x.classList.add("navbarc1");
+  }
+}
+function hide() {
+   var up = document.getElementById("navbar-right");
+   up.classList.toggle("ardwn");
+}
+  </script>
+
+  </body>
+</html>

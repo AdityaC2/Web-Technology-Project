@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular One" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kodchasan" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sail" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Port Lligat Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Poverty in India</title>
+    <style>
+    body{
+      margin: 0px;
+    }
+/*THIS IS FOR THE MENU BAR*/
+      #navbar {
+        overflow: hidden;
+        background-color: #BB8760;
+        padding: 3px 10px 0px;
+        transition: 0.4s;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 99;
+        justify-content: center;
+      }
+      #arrow{
+        background: #BB8760;
+        border: none;
+      }
+      #navbar a {
+        float: left;
+        color: #fff1f1;
+        font-family: "Rubik";
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 30px;
+        border-radius: 4px;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+
+      #logo {
+        width: 100px;
+        height: auto;
+        transition: 0.4s;
+        border-radius: 10px;
+      }
+
+      #navbar a:hover {
+        background-color: #FFDADA;
+        color: black;
+      }
+
+      #navbar a.active {
+        background-color: #4F0E0E;
+        color: white;
+      }
+
+      #navbar-right {
+        float: right;
+        padding-right: 60px;
+        padding: 20px;
+      }
+      .ar{
+        display: none;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      @media screen and (max-width: 1000px) {
+        #navbar {
+          padding-top: 30px 10px !important;
+        }
+        #navbar a{
+          float: none;
+          display: block;
+          text-align: center;
+        }
+        #file a{
+          display: inline;
+        }
+        #navbar-right {
+          float: none;
+          padding-right: 0px;
+        }
+        .ar{
+          display: inline-block;
+        }
+        .ardwn{
+          display: none;
+        }
+      }
+      .material-symbols-outlined{
+        z-index: 1;
+        color: white;
+        background-color: #4F0E0E;
+        border-radius: 20px;
+      }
+/*THIS IS FOR THE MENU BAR*/
+
+/*THIS IS FOR THE TILE SECTION*/
+      #ttl{
+        margin-top: 10vh;
+        background-image: url("poor.jpeg");
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+        background-size: cover;
+        float: right;
+        padding-bottom: 30px;
+        padding-top: 30vh;
+        width: 100vw;
+        overflow: hidden;
+        align-items: center;
+        align-content: center;
+      }
+      #header_section{
+        color: white;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 30px;
+        font-family: "Secular One";
+        display:inline-block;
+        border-radius: 4px;
+        width: 50vw;
+        text-align: center;
+      }
+/*THIS IS FOR THE TILE SECTION*/
+
+/*THIS IS FOR THE SUBHEAD SECTION*/
+      #subhead{
+        background: #4f0e0e;
+      }
+      #header_section2 h2{
+        font-family: "Kodchasan";
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 25px;
+        padding: 20px;
+        align-self: center;
+        padding-top: 500px;
+      }
+/*THIS IS FOR THE SUBHEAD SECTION*/
+
+/*THIS IS FOR THE CAUSES SECTION*/
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 10px;
+        gap: 10px;
+        overflow-y: scroll;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .grid-item {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        height: auto;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+      }
+      .img{
+        width: 40vw;
+        height: auto;
+      }
+      .hed{
+        font-size: 20px;
+        font-family: "Kodchasan";
+        color: white;
+      }
+      .para{
+        font-family: "Rubik";
+        font-size: 15px;
+        display: none;
+        color: white;
+        line-height: 30px;
+        overflow-x: scroll;
+      }
+      .explain{
+        display: block;
+      }
+      #causes{
+        background: url("india.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-bottom: 20px;
+      }
+/*THIS IS FOR THE CAUSES SECTION*/
+
+/*THIS IS FOR THE SOLUTION SECTION*/
+      .grid-container1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        overflow-y: scroll;
+      }
+      .grid-item1 {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        width: 400px;
+      }
+      #header_section3 h2{
+        font-family: "Kodchasan";
+        text-align: center;
+        color: #4F0E0E;
+        font-size: 25px;
+        padding: 20px;
+      }
+      #sol2{
+        border-left: 1px solid rgba(0, 0, 0, 0.8);
+        border-right: 1px solid rgba(0, 0, 0, 0.8);
+      }
+      .p{
+        font-family: "Rubik";
+        font-size: 20px;
+        text-align: center;
+        line-height: 35px;
+      }
+      #lg{
+        font-size: 50px;
+        background: none;
+        color: #5A5A5A;
+      }
+      #header_section4 h2{
+        font-family: "Kodchasan";
+        text-align: center;
+        background-color: #4F0E0E;
+        color: white;
+        font-size: 25px;
+        padding: 20px;
+      }
+      #header_section4 p{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-family: "Rubik";
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        line-height: 40px;
+      }
+      #button{
+        border-radius: 10px;
+        text-align: center;
+        width: 200px;
+        height:90px;
+        background-color: #4f0e0e;
+        color: white;
+        border-color: white;
+        font-size: 20px;
+        border-width: 4px;
+        margin-bottom: 10vh;
+      }
+      #button:hover{
+        background: #D7A86E
+      }
+/*THIS IS FOR THE SOLUTION SECTION*/
+
+/*THIS IS FOR THE FOOT SECTION*/
+      #foot{
+        background-color: #BB8760;
+        padding: 20px;
+        font-family: "Rubik";
+        color: white;
+        width: inherit;
+        padding: 20px;
+        text-align: right;
+      }
+/*THIS IS FOR THE FOOT SECTION*/
+    </style>
+  </head>
+  <body>
+    <header id="navbar" class = "navbarc1">
+      <img src="RuFree.jpg" alt="" id = "logo">
+      <div id="navbar-right">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="donation.html" id = "special">Donate</a>
+      </div>
+      <center>
+        <div class="ar">
+          <button type = "button" onclick = "hide()" id = "arrow"><span class="material-symbols-outlined">arrow_downward</span></button>
+        </div>
+      </center>
+    </header>
+
+  <section id = "ttl">
+    <center><header id = "header_section">
+      <h1>Poverty In India</h1>
+    </header></center>
+  </section>
+
+  <section id = "causes">
+    <section id = "subhead">
+      <header id = "header_section2">
+        <h2>Causes of Poverty</h2>
+      </header>
+    </section>
+    <div class="grid-container" id = "cause">
+      <div class="grid-item">
+        <h2 class = "hed">Climatic Factors</h2>
+        <a href = "#cause" onclick="ri1()"><img src="https://www.indiaspend.com/h-upload/old_images/1600x960_344605-flood620.jpg" alt="" class = "img" id = "img1"></a>
+        <p class = "para" id = "para1">These conditions constitute an important cause of poverty. The heat which is experienced by the rural
+          population causes some barriers in their work due to which their production suffers. Natural calamities such as frequent floods,
+          disasters, earthquake and cyclone cause heavy damage to agriculture. Agriculture is stated to be the major occupation of the rural people;
+          downfall of agriculture and lack of production will certainly be the major cause of poverty for them.</p>
+      </div>
+      <div class="grid-item">
+        <h2 class = "hed">Demographic Factors</h2>
+        <a href = "#cause" onclick="ri2()"><img src="https://miro.medium.com/max/805/1*iadSGFMmFC9z-0bmLP8oqw.jpeg" alt="" class = "img" id = "img2"></a>
+        <p class = "para" id = "para2">There have been demographic factors which are accountable for the growth of poverty in India. Rapid growth of population aggravates the
+          poverty of the people. The growth of population exceeds the rate of growth in national income. Growth of the country’s population creates
+          impediments in the removal of poverty and lowers the per capita income. Economically backward sections of the society and other disadvantaged
+          groups are the main sufferers of the reduction in per capita income. Population growth also leads to an increase in labor supply which tends to
+          decrease the wage rate.<br><br>
+          Another demographic factor is the size of the family. The larger the size of the family, the lower the per capita income and lower is the standard
+          of living. This is common more in rural areas than in the urban areas. In rural areas, there is a system of having more joint families in a household.</p>
+      </div>
+      <div class="grid-item">
+        <h2 class = "hed">Personal Factors</h2>
+        <a href = "#cause" onclick="ri3()"><img src="https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/02/27/Photos/skilledworker--621x414.jpg" alt="" class = "img" id = "img3"></a>
+        <p class = "para" id = "para3">There have been a couple of personal factors too which are accountable for the growth of poverty in India. One is lack of motivation, some rural people
+          do not inculcate this motivation amongst themselves that they should work hard and achieve something for themselves. They are not even willing to acquire
+          some literacy skills and this causes poverty. Second reason is their redundancy, mostly people are indolent, monotonous and unenthusiastic to work and therefore
+          live their lives in extreme poverty.</p>
+      </div>
+      <div class="grid-item">
+        <h2 class = "hed">Economic Factors</h2>
+        <a href = "#cause" onclick="ri4()"><img src="https://www.fairobserver.com/wp-content/uploads/2019/05/Indian-National-Congress-India-Indian-news-poverty-in-India.jpg" alt="" class = "img" id = "img4"></a>
+        <p class = "para" id = "para4">First is low agricultural productivity. There is relationship between real income and poverty, increase
+          in real income leads to the reduction in poverty. In the agricultural sector, even today the traditional cultivation techniques are being employed by the
+          farmers, leading to low productivity and hence resulting in poverty.Second are the unequal distribution of land and other assets, land and other forms of
+          assets constitute the main source of income of the rural people. The size wise distribution of operational holdings is vested in the hands of few farmers;
+          therefore the other farmers suffer from poverty to a major extent.
+          <br><br>Thirdly, there has been a decline of village industries, due to industrialization, new industries and factories are being set up in rural areas,
+          village industries are poor in their comparison in terms of quality and productivity, as a result village industries are closing down, in this way, individuals
+          employed are losing their jobs and suffering from the conditions of poverty.
+          <br><br>Fourthly, there has been immobility of labor, even if they are offered a job with higher wages, they are not willing to leave their homes and travel
+          to another place to earn their living and take their conditions as they are.
+          <br><br>Finally, there is lack of employment opportunities, unemployment leads to major poverty, because of lack of employment opportunities, people are either
+          unemployed or underemployed, small and marginal farmers and landless agricultural laborers constitute unemployed and underemployed population.</p>
+      </div>
+      <div class="grid-item">
+        <h2 class = "hed">Social Factors</h2>
+        <a href = "#cause" onclick="ri5()"><img src="https://thelogicalindian.com/h-upload/2020/07/20/177503-povertyweb.jpg" alt="" class = "img" id = "img5"></a>
+        <p class = "para" id = "para5">First is education, education is stated to be the agent of social change. Poverty is said to be
+          closely related to the levels of schooling that the individual has obtained. The earning capacity is endowed within an individual on the basis of the level of
+          education that he has attained. People who are illiterate or who have not acquired much education do dwell in the conditions of poverty, and people who are well
+          educated do enable to find job opportunities for themselves. People suffer from poverty due to poor investment amongst themselves and they lack the funds for human
+          capital investment.
+          <br><br>Second is the caste system, caste system in India has always been responsible for rural poverty. The subordination of the low caste people by the high caste
+          people has caused the poverty of the former. The caste system in some areas was so rigid that it did not allow the low caste people to render their participation in
+          economic development. The caste system comprised of Brahmins (teachers and priests) at the top, at the next level are the Kshatriyas (kings and warriors), next came
+          the Vaishyas (traders and merchants) and lastly were the Shudras (unskilled workers) at the bottom. Shudras were not allowed to trade and a Vaishya could earn his bread
+          only due to trade.
+          <br><br>Third is the joint family system. Joint family system is the family system when two or more nuclear families reside under the common roof, comprising of grandparents, aunts, uncles, cousins and so forth. Some of the members of the family take undue advantage of living in a joint family by depending upon the income of others. They become idlers and their normal life routine just consists of eating, sleeping and begetting children; in this manner there are few earning members and the family becomes large, hence resulting in poverty.
+          <br><br>Fourth are the social customs, rural people spend a large amount of their earnings and savings on social customs such as marriage, birth, death feast and so forth, due to this they lose their savings and earnings and suffer from debt and poverty.
+          <br><br>Lastly it is growing indebtedness, in the rural sector most of the rural people depend upon the borrowings from the landlords and money lenders even to meet their consumption requirements. The money lenders charge exorbitant rates of interest and acquire mortgaged lands in order to exploit the poor in case of non-payment of loans. Indebted poor farmers cannot free themselves from the control of the money lenders; in this way their poverty is further highlighted, as a consequence they continue to dwell in poverty for generations because of the debt- trap.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id = "solution">
+    <header id = "header_section3">
+      <h2>What We Are Doing</h2>
+    </header>
+    <div class="grid-container1">
+      <div class="grid-item1" id = "sol1">
+        <span class="material-symbols-outlined" id = "lg">handshake</span>
+        <p class = "p"><b>Partnerships With Companies And Foundations</b></p>
+        <p class = "p">Here in RuFree Foundation, not only do we seek to curb the poverty rates in India, but also ensure the provision of a better lifestyle for the unfortunate
+        ones, that were denied to them due to their status. We partner up with various companies and foundations to provide opportunities such as scholarships for children, health care that in
+      affordable by them, as well as positions in various jobs so that they could sustain themselves.</p>
+      </div>
+      <div class="grid-item1" id = "sol2">
+        <span class="material-symbols-outlined" id = "lg">currency_rupee</span>
+        <p class = "p"><b>Fundraiser Events</b></p>
+        <p class = "p">Numerous fundraiser events are held in order to not only support and help those living in poverty, but also to raise awareness and support our mission to curb poverty, and reduce inequality
+          to the general public. From holding concerts, auctions, half marathons and neighborhood cookouts, we ensure that the general public have fun and enjoy these events, all the while supporting
+          our noble cause.</p>
+      </div>
+      <div class="grid-item1" id = "sol3">
+        <span class="material-symbols-outlined" id = "lg">volunteer_activism</span>
+        <p class = "p"><b>Volunteer Work</b></p>
+        <p class = "p">We believe that, although curbing poverty is the main long-run mission, there are numerous ways we could help the poor out, which could benefit them in the short run. We, along with
+        various volunteers, organize activities such as setting up stalls to donate necesseties that they require to survive, and kitchens to help feed the malnourished. We even do small activities
+        such as teaching the unfornunate children, and providing families with affordable healthcare.</p>
+      </div>
+    </div>
+    <header id = "header_section4">
+      <h2><em>What You Can Do</em></h2>
+      <p>We encourage many to take part in our fundraiser - either by helping our staff with the setups, or simply by attending the fundraisers - and volunteer in various activities organized. Moreover, donations
+      are also much appreciated and valued. Click below to donate to our cause</p>
+    </header>
+      <center><form action = "donation.html" method = "post"><button type="submit" name="button" id = "button">Donate Now</button></form></center>
+  </section>
+
+  <footer  id = "foot">
+      <p>Copyright (c) 2022 RuFree Foundation All Rights Reserved.</p>
+  </footer>
+
+  <script type="text/javascript">
+  function hide() {
+     var x = document.getElementById("navbar-right");
+     x.classList.toggle("ardwn");
+  }
+  function ri1() {
+     var y = document.getElementById("para1");
+     y.classList.toggle("explain");
+  }
+  function ri2() {
+     var z = document.getElementById("para2");
+     z.classList.toggle("explain");
+  }
+  function ri3() {
+     var a = document.getElementById("para3");
+     a.classList.toggle("explain");
+  }
+  function ri4() {
+     var b = document.getElementById("para4");
+     b.classList.toggle("explain");
+  }
+  function ri5() {
+     var c = document.getElementById("para5");
+     c.classList.toggle("explain");
+  }
+  </script>
+
+  </body>
+</html>
